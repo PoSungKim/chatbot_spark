@@ -7,8 +7,10 @@ mainClass := Some("com.chatbot_spark.main")
 
 libraryDependencies ++= Seq (
   "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % "3.1.2",
+  "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkVersion,
 
-  "com.typesafe.akka" %% "akka-actor-typed" % "2.6.17" ,
+  "com.typesafe.akka" %% "akka-actor-typed" % "2.6.17",
   "com.typesafe.akka" %% "akka-stream" % "2.6.17",
   "com.typesafe.akka" %% "akka-http" % "10.2.7",
   "com.typesafe.akka" %% "akka-http-spray-json" % "10.2.7",
